@@ -8,12 +8,7 @@ app.post('/',(req,res)=>{
     res.send("in default page")
 })
 
-app.post('/add',(req,res)=>{
-    var  x=parseFloat(req.body.a)
-    var y=   parseFloat(req.body.b)
-    var result=a+b
-    res.send(result)
-})
+
 
 
 app.post('/sum',(req,res)=>{
@@ -26,6 +21,6 @@ app.post('/sum',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
+app.listen(process.env.port||3000,()=>{
     console.log("server started")
 })

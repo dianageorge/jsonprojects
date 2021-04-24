@@ -4,7 +4,7 @@
   "description": "this is a sample file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node project.js"
   },
   "author": "diana",
   "license": "ISC",
